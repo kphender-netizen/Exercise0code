@@ -1,1 +1,232 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergyAnalyst — Insights to Appliance Energy Use </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ 
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo" onclick="showPage('home')" title="Return to Home">
+        <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="20" y1="8" x2="20" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 14 Q8 19 10 25 Q12 31 20 32 Q28 31 30 25 Q32 19 27 14" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">EnergyAnalyst </span>
+      </div>
+      <ul class="nav-links">
+        <li><button class="nav-btn active" onclick="showPage('home')" data-page="home">Home</button></li>
+        <li><button class="nav-btn" onclick="showPage('televisions')" data-page="televisions">Televisions</button></li>
+        <li><button class="nav-btn" onclick="showPage('about')" data-page="about">About Us</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="page-home" class="page active">
+
+    <section class="hero">
+      <div class="hero-eyebrow">Insights to Australian Energy</div>
+      <h1 class="hero-title">How much energy does your<br><em>home really consume?</em></h1>
+      <p class="hero-sub">Australians are spending more then $2,000 a year powering on Energy. We break down where each kilowatt goes to — starting with the appliances that you use on a every day basis.</p>
+      <button class="cta-btn" onclick="showPage('televisions')">Explore Televisions →</button>
+    </section>
+
+    <section class="stats-band">
+      <div class="stat-item">
+        <span class="stat-number">8,900</span>
+        <span class="stat-label">kWh on avg in a household use per year</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">33%</span>
+        <span class="stat-label">of bills from heating and &amp; cooling appliance alone </span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">6★</span>
+        <span class="stat-label">Energy Star rating saves up to 50%</span>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <h2 class="section-title">Top Energy Users at Home</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3>Heating &amp; Cooling</h3>
+          <p>Air conditioners and heaters are the largest category of home energy use which uses the most energy, which makes up for third of annual bills.</p>
+          <span class="card-tag">~3,000 kWh/yr</span>
+        </div>
+        <div class="card card-invert">
+          <div class="card-num">02</div>
+          <h3>Televisions</h3>
+          <p>Modern OLED and QLED sets vary widely in consumption. Screen size, brightness, and usage hours all play a critical role.</p>
+          <span class="card-tag">~200–500 kWh/yr</span>
+        </div>
+        <div class="card">
+          <div class="card-num">03</div>
+          <h3>Washing &amp; Drying</h3>
+          <p>Front-loader machines are  more efficient, Hot cycles take up 90% more energy then Cold washes.</p>
+          <span class="card-tag">~500 kWh/yr</span>
+        </div>
+        <div class="card">
+          <div class="card-num">04</div>
+          <h3>Cooking Appliances</h3>
+          <p>Induction cooktops transfer up to 90% of energy to food, compared to just 40% for gas. </p>
+          <span class="card-tag">~350 kWh/yr</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="insight-strip">
+      <div class="insight-text">
+        <h2>The Australian Energy Star Rating</h2>
+        <p>All appliances in Australia has a start on it, indicating the amount of energy it uses . Each  star reduces the consumption by 20–25%. An extra star today could save citizens alot of money.</p>
+      </div>
+      <div class="star-block">
+        <span class="star-row">★★★★★★</span>
+        <small>6-Star Rated</small>
+      </div>
+    </section>
+
+  </main>
+
+  <main id="page-televisions" class="page">
+
+    <section class="page-header">
+      <p class="page-eyebrow">Appliance Deep Dive</p>
+      <h1 class="page-title">Televisions</h1>
+      <p class="page-intro">Even though screen tech is growing rapidly, not all of the progress are efficient. Here's what the numbers look like in the Australian market.</p>
+    </section>
+
+    <section class="tv-section">
+      <h2 class="section-title">Technology Comparison</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Screen Size</th>
+              <th>Avg. Watts</th>
+              <th>Annual Cost*</th>
+              <th>Star Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tech-badge">LED LCD</span></td><td>55"</td><td>80W</td><td>~$28</td><td>★★★★☆</td></tr>
+            <tr><td><span class="tech-badge b-mid">OLED</span></td><td>55"</td><td>110W</td><td>~$39</td><td>★★★☆☆</td></tr>
+            <tr><td><span class="tech-badge b-dark">QLED</span></td><td>65"</td><td>140W</td><td>~$50</td><td>★★★☆☆</td></tr>
+            <tr><td><span class="tech-badge">LED LCD</span></td><td>75"</td><td>160W</td><td>~$57</td><td>★★☆☆☆</td></tr>
+            <tr><td><span class="tech-badge b-mid">Mini-LED</span></td><td>65"</td><td>120W</td><td>~$43</td><td>★★★★☆</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">* Based on 5 hrs/day use at $0.35/kWh (Australian avg. 2024)</p>
+    </section>
+
+    <section class="tips-section">
+      <h2 class="section-title">Tips to Reduce TV Energy Use</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-num">01</div>
+          <h3>Enable Eco Mode</h3>
+          <p>Most modern TVs priotizes more on brightness. Switching to a Eco or Cinema Home cuts the use of power by 20–30% which is a significant amount.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">02</div>
+          <h3>Use Auto Brightness</h3>
+          <p>This light sensors adjut the brightness of your screen to your room, which improves viewing comfort and also saves alot of power.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">03</div>
+          <h3>Avoid Standby</h3>
+          <p>A TV left on without any use draws 1–5W continuously,always use the power switch and switch of your tech when you are not using them .</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">04</div>
+          <h3>Right-Size Your Screen</h3>
+          <p>A 65" TV uses roughly double the energy of a 42" model, be resposible and choose a size that best suits your room viewing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2 class="section-title">Energy Use by Screen Size</h2>
+      <div class="bar-chart" id="barChart"></div>
+      <div class="chart-legend">
+        <span class="legend-swatch"></span>
+        <span>Watts consumed at typical brightness</span>
+      </div>
+    </section>
+
+  </main>
+
+  <main id="page-about" class="page">
+
+    <section class="page-header">
+      <p class="page-eyebrow">Our Mission</p>
+      <h1 class="page-title">About Us</h1>
+      <p class="page-intro">EnergyAnalyst is a project exploring appliance energy consumption across each Australian households.</p>
+    </section>
+
+    <section class="about-grid">
+      <div class="about-block">
+        <h2>Why Energy Matters</h2>
+        <p>Australia is the country with the highest use of energy . At an average of $0.33–$0.40 per kWh, smart appliance choices has a huge impact on household budgets and carbon emissions.</p>
+        <p>This project was built to show the data in a clearer format for everyone else to understand</p>
+      </div>
+      <div class="about-block">
+        <h2>Data Sources</h2>
+        <ul class="src-list">
+          <li>Australian Energy Regulator (AER)</li>
+          <li>Energy Rating Australia (energyrating.gov.au)</li>
+          <li>Australian Bureau of Statistics — Household Energy</li>
+          <li>Choice.com.au TV Reviews &amp; Efficiency Data</li>
+          <li>CSIRO Australian Residential Energy Baseline</li>
+        </ul>
+      </div>
+      <div class="about-block">
+        <h2>The Project</h2>
+        <p>Built as part of COS30045 — Data Visualisation at Swinburne University of Technology. This site serves as the host platform for interactive D3.js visualisations exploring energy data across the Australian market.</p>
+        <p>The codebase is version-controlled on GitHub and deployed on Swinburne's Mercury Apache server.</p>
+      </div>
+      <div class="about-block">
+        <h2>Technology Stack</h2>
+        <ul class="tech-list">
+          <li><span class="tech-pill">HTML5</span>Semantic structure &amp; accessibility</li>
+          <li><span class="tech-pill">CSS3</span>Custom properties &amp; responsive layout</li>
+          <li><span class="tech-pill">JavaScript</span>Page routing &amp; chart rendering</li>
+          <li><span class="tech-pill">GitHub</span>Version control &amp; commit history</li>
+          <li><span class="tech-pill">Apache</span>Mercury server deployment</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg width="20" height="20" viewBox="0 0 40 40" fill="none">
+          <circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="20" y1="8" x2="20" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13 14 Q8 19 10 25 Q12 31 20 32 Q28 31 30 25 Q32 19 27 14" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </svg>
+        EnergyAnalyst 
+      </div>
+      <div class="footer-copy">&copy; 2026 &nbsp;·&nbsp; [Kiranjeet Singh] &nbsp;·&nbsp; COS30045 Data Visualisation</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
